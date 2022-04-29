@@ -1,0 +1,13 @@
+.select{
+    outline: none;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #ff9a00;
+    border-radius: 10px;
+    color: #ff9a00;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+}
+.select > option {
+    background-color: rgba(255, 255, 255, 0);
+}

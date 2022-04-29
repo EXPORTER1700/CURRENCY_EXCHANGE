@@ -1,0 +1,30 @@
+@media screen and (max-width: 460px){
+    .container{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 50px;
+}
+.p{
+    font-weight: bold;
+    color: white;
+    font-size: 34px;
+}
+.span{
+    color: #ff9a00;
+}
+.div{
+    display: flex;
+}
+.div > p {
+    margin-right: 10px;
+}
+.div > p:last-child {
+    margin-right: 0;
+}
