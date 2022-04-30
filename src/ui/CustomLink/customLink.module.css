@@ -1,0 +1,18 @@
+.link{
+    display: flex;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    width: 130px;
+    height: 30px;
+    border: 2px solid #ff9a00;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #ff9a00;
+}
+.active{
+    background-color: #ff9a00;
+    color: white;
+}

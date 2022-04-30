@@ -1,0 +1,30 @@
+@media screen and ( max-width: 500px) {
+    .container {
+        font-size: 12px;
+    }
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ff9a00;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.container:hover {
+    background-color: #ff9a00;
+    color: white;
+}
+
+.txt {
+    flex: 1 0 33.333%;
+}
+
+.cc {
+    flex: 1 0 33.333%;
+}
+
+.rate {
+    flex: 1 0 33.333%;
+}

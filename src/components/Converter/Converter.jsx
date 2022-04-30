@@ -43,13 +43,15 @@ const Converter = () => {
                     type={'text'}
                     value={fromCurrency.count}
                     onChange={event => {
-                        setFromCurrency(prevState => ({
-                            ...prevState, count: Number(event.target.value)
-                        }))
-                        setToCurrency(prevState => ({
-                            name: prevState.name,
-                            count: converter(fromCurrency.name, toCurrency.name, event.target.value)
-                        }))
+                        if (event.target.value == Number(event.target.value)) {
+                            setFromCurrency(prevState => ({
+                                ...prevState, count: Number(event.target.value)
+                            }))
+                            setToCurrency(prevState => ({
+                                name: prevState.name,
+                                count: converter(fromCurrency.name, toCurrency.name, event.target.value)
+                            }))
+                        }
                     }
                     }/>
             </div>
@@ -64,13 +66,15 @@ const Converter = () => {
                     className={classes.input}
                     value={toCurrency.count}
                     onChange={event => {
-                        setToCurrency(prevState => ({
-                            ...prevState, count: Number(event.target.value)
-                        }))
-                        setFromCurrency(prevState => ({
-                            name: prevState.name,
-                            count: converter(toCurrency.name, fromCurrency.name, event.target.value)
-                        }))
+                        if (event.target.value == Number(event.target.value)) {
+                            setToCurrency(prevState => ({
+                                ...prevState, count: Number(event.target.value)
+                            }))
+                            setFromCurrency(prevState => ({
+                                name: prevState.name,
+                                count: converter(toCurrency.name, fromCurrency.name, event.target.value)
+                            }))
+                        }
                     }
                     }/>
             </div>
